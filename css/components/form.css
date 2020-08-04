@@ -1,0 +1,19 @@
+.js__form{
+    display: block;
+}
+
+.js__form input{
+    width: 850px;
+    height: 100px;
+    background-color: inherit;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    border-bottom: 5px solid white;
+}
+
+.js__form input:focus,
+.js__form input:active{
+    outline:none;
+}
