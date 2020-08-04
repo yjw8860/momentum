@@ -1,0 +1,15 @@
+@import "reset.css";
+@import "components/top__row.css";
+@import "components/clock.css";
+@import "components/main.css";
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.form {
+  display: none;
+}
