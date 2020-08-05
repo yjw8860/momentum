@@ -14,7 +14,7 @@
           <i class="fas fa-search"></i>
           <input class="search__input" type="text" />
           <div class="search__icon__container">
-            <i class="fas fa-globe-asia"></i>
+            <img src="img/google_.png" alt="">
             <i class="fas fa-angle-down"></i>
           </div>
         </form>
@@ -24,22 +24,37 @@
       </div>
     </div>
     <main class="main__screen">
-      <div class="js__clock">
-        <h1 class="js__title">00:00</h1>
+      <div class="clock__js  css__clock">
+        <div class="title__greeting__container">
+          <h1 class="title__js css__clock__title">00:00</h1>
+          <h1 class="greeting__js css__clock__greeting"></h1>
+        </div>
+        <div class="title__greeting__container">
+          <form class="todo__js css__todo">
+            <h1 class="question__js css__question">What is your main focus for today?</h1>
+            <input class = 'css__input__form' type="text">
+          </form>
+        </div>
+        
       </div>
-      <div class="welcome">
-        <h1 class="welcome__message">What's your name?</h1>
-        <form class="js__form form">
-          <input type="text"/>
+      <div class="identify">
+        <form class="welcome__js css__form">
+          <h1 class="welcome__js css__form__message">What's your name?</h1>
+          <input class="css__input__form" type="text" required/>
+        </form>
+        <form class="email__js css__form invisible">
+          <h1 class="email__js css__form__message"></h1>
+          <input class = 'css__input__form' type="email" required/>
+        </form>
+        <form class="password__js css__form invisible">
+          <h1 class="password__js css__form__message">What's your password?</h1>
+          <input class = 'css__input__form' type="password" required/>
         </form>
       </div>
 
     </main>
 
-    <script
-      src="https://kit.fontawesome.com/a538ee334a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a538ee334a.js" crossorigin="anonymous"></script>
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
   </body>

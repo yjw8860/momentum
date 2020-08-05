@@ -2,15 +2,15 @@
 @import "components/top__row.css";
 @import "components/clock.css";
 @import "components/main.css";
-@import "components/welcome.css";
 @import "components/form.css";
 @import "components/animation.css";
-@import "components/flex.css";
+@import "components/display.css";
 
 body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  animation: appear 2s ease-in-out;
 }
 

@@ -1,11 +1,45 @@
-.js__clock {
+.css__clock,
+.title__greeting__container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 300px;
-  padding-bottom: 30px;
+  align-items: center;
 }
 
-.js__title {
-  font-size: 100px;
+.css__clock {
+  padding-top: 150px;
+}
+
+.title__greeting__container{
+  padding-bottom: 100px;
+}
+
+.css__clock__title {
+  font-size: 150px;
+  font-weight: 520;
+}
+
+.css__clock__greeting{
+  font-size: 80px;
   font-weight: 500;
+}
+
+.css__todo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.css__question{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.css__todo .css__input__form{
+  width: 600px;
+  font-size: 40px;
+  height:40px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
 }

@@ -1,8 +1,18 @@
-.js__form{
-    display: block;
+.css__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+  
+.css__form__message {
+    font-size: 100px;
+    font-weight: 500;
 }
 
-.js__form input{
+.css__input__form{
     width: 850px;
     height: 100px;
     background-color: inherit;
@@ -13,7 +23,8 @@
     border-bottom: 5px solid white;
 }
 
-.js__form input:focus,
-.js__form input:active{
+.css__input__form:focus,
+.css__input__form:active{
     outline:none;
 }
+  
