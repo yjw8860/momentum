@@ -91,6 +91,7 @@ function init(){
   saveUserName();
   saveEmail();
   savePassword();
+  createGreetingMessage();
 }
 
 init();
