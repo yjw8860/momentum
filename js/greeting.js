@@ -32,13 +32,15 @@ function createGreetingMessage() {
 }
 
 function checkUserName(){
-  if(localStorage.getItem(USER_LS) === null || localStorage.getItem(EMAIL_LS) === null || localStorage.getItem(PW_LS) === null ){
-    // localstorage에 USERNAME에 대한 정보가 없으면
+  if(localStorage.getItem(USER_LS) !== null || localStorage.getItem(EMAIL_LS) !== null || localStorage.getItem(PW_LS) !== null ){
+    // localstorage에 username, email, password 하나라도 없으면
+    welcome_form.classList.add('invisible');
+    createGreetingMessage();
+  }else{
+    // localstorage에 username, email, password 모두 있으면
     clock_.classList.add('invisible');
     top__row__container.classList.add('invisible');
-  }else{
-    // localstorage에 USERNAME이 있으면
-    welcome_form.classList.add('invisible');
+
   }
 }
 
@@ -91,7 +93,6 @@ function init(){
   saveUserName();
   saveEmail();
   savePassword();
-  createGreetingMessage();
 }
 
 init();
