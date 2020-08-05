@@ -70,6 +70,7 @@ function getPassword(event){
   top__row__container.classList.remove('invisible');
   top__row__container.classList.add('fade_in');
   clock_.classList.add('fade_in');
+  createGreetingMessage();
 }
 
 
@@ -90,7 +91,6 @@ function init(){
   saveUserName();
   saveEmail();
   savePassword();
-  createGreetingMessage();
 }
 
 init();
