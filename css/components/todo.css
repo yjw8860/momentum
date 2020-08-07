@@ -4,12 +4,14 @@
   margin-bottom: 10px;
 }
 
-.css__TODO i {
+.fa-square,
+.fa-times-circle {
   opacity: 0.5;
   transition: opacity 0.5s ease-in-out;
 }
 
-.css__TODO i:hover {
+.fa-square:hover,
+.fa-times-circle:hover{
   opacity: 1;
 }
 

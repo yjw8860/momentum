@@ -1,6 +1,7 @@
 const clockContainer = document.querySelector(".clock__js"),
   clockTitle = document.querySelector(".title__js");
 
+
 function getTime() {
   const date = new Date();
   const minutes = date.getMinutes();

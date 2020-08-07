@@ -1,18 +1,17 @@
 const identify = document.querySelector('.identify'),
-  welcome_form = document.querySelector(".welcome__js"),
-  welcome_input = document.querySelector(".welcome__js input"),
-  email_form = document.querySelector('.email__js'),
-  email_message = document.querySelector('.email__js h1'),
-  email_input = document.querySelector('.email__js input'),
-  password_form = document.querySelector('.password__js'),
-  password_input = document.querySelector('.password__js input'),
-  USER_LS = "currentUser",
-  EMAIL_LS = 'email',
-  PW_LS = 'password',
-  clock_ = document.querySelector('.clock__js'),
-  top__row__container = document.querySelector('.top__row__container'),
-  greeting_ = document.querySelector('.greeting__js');
-
+welcome_form = document.querySelector(".welcome__js"),
+welcome_input = document.querySelector(".welcome__js input"),
+email_form = document.querySelector('.email__js'),
+email_message = document.querySelector('.email__js h1'),
+email_input = document.querySelector('.email__js input'),
+password_form = document.querySelector('.password__js'),
+password_input = document.querySelector('.password__js input'),
+USER_LS = "currentUser",
+EMAIL_LS = 'email',
+PW_LS = 'password',
+clock_ = document.querySelector('.clock__js'),
+top__row__container = document.querySelector('.top__row__container'),
+greeting_ = document.querySelector('.greeting__js');
 
 function createGreetingMessage() {
   const currentTime = Number(new Date().toLocaleTimeString('en-US', { hour12: false, hour: "numeric", minute: "numeric"}).replace(':', ''));
