@@ -8,7 +8,6 @@
 @import "components/todo.css";
 
 body {
-  background-image: url('../img/bg_3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;

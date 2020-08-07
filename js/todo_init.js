@@ -20,8 +20,9 @@ function getRandomIntInclusive(min, max) {
 
 function initBackgroundImg(){
   let num = getRandomIntInclusive(MIN_NUM,MAX_NUM),
-  img_path = `url('/img/bg_${num}.jpg')`
+  img_path = `url('https://github.com/yjw8860/momentum/blob/master/img/bg_${num}.jpg?raw=true')`
   body.style.backgroundImage = img_path;
+  console.log(num);
 }
 
 function checkLStodo() {
