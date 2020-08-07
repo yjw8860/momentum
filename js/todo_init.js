@@ -22,7 +22,6 @@ function initBackgroundImg(){
   let num = getRandomIntInclusive(MIN_NUM,MAX_NUM),
   img_path = `url('https://github.com/yjw8860/momentum/blob/master/img/bg_${num}.jpg?raw=true')`
   body.style.backgroundImage = img_path;
-  console.log(num);
 }
 
 function checkLStodo() {
@@ -85,14 +84,21 @@ function initCheckBox(){
       checkBoxObj[ID] = basket;
     }
   }
-
 }
 
+function checkUl(){
+  if(todoCheckBoxIcons.length===0){
+    todo_ul.classList.remove('background__ul');
+  }else{
+    todo_ul.classList.add('background__ul');
+  }
+}
 function init() {
   initBackgroundImg();
   checkLStodo();
   createWholeListHtml();
   initCheckBox();
+  checkUl();
 }
 
 init();

@@ -30,6 +30,14 @@ function changeCheckBoxExecute(){
   }
 }
 
+function checkUl(){
+  if(todoCheckBoxIcons.length===0){
+    todo_ul.classList.remove('background__ul');
+  }else{
+    todo_ul.classList.add('background__ul');
+  }
+}
+
 function delTodoList(event) {
   const id = event.target.id.replace('del_btn_','');
   delete todoList[id];
@@ -38,6 +46,7 @@ function delTodoList(event) {
   localStorage.setItem("checkBox", JSON.stringify(checkBoxObj));
   document.querySelector(`#todo_list_${id}`).remove();
   updateTodoIcons();
+  checkUl();
 }
 
 function delTodoListExecute(){
@@ -64,6 +73,7 @@ function createListHtml(id){
   li.appendChild(icon_2);
   todo_ul.appendChild(li);
   updateTodoIcons();
+  checkUl();
 }
 
 function getTodo() {
