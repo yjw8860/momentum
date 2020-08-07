@@ -1,0 +1,19 @@
+.css__TODO {
+  font-size: 25px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.css__TODO i {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.css__TODO i:hover {
+  opacity: 1;
+}
+
+.css__TODO i,
+.css__TODO span {
+  margin-left: 10px;
+}
