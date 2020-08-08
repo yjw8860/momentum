@@ -6,6 +6,7 @@
 @import "components/animation.css";
 @import "components/display.css";
 @import "components/todo.css";
+@import "components/weather.css";
 
 body {
   background-repeat: no-repeat;

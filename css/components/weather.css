@@ -1,0 +1,44 @@
+.weather__img__js{
+    width:30px;
+    height:30px;
+}
+
+.css__weather__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.css__weather__container__column span{
+    font-size:15px;
+    margin:0;
+}
+
+.css__weather__container__column:first-child{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css__weather__container:last-child span{
+    font-size: 15px;
+    margin: 0;
+    margin-top: 10px;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+
+.css_weather__whole_container{
+    transition: background-color 1s ease-in-out;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.css_weather__whole_container:hover{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+.css_weather__whole_container:hover .css__weather__container:last-child span{
+    opacity: 1;
+    cursor: pointer;
+}
